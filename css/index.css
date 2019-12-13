@@ -1,0 +1,208 @@
+/*** font imports ***/@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap'); /* Heading font*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); /* paragraph font*/
+
+html {
+--text:#333;
+--primary-a: #7a77b9;
+--primary-b: #f7d749;
+--secondary-a: #bd9dea;
+--secondary-b:#f8ed8c;
+--background: #EBE8E7;
+--error: #ea7186;
+
+/*** Foreground colour***/
+
+--on-primary: 
+--on-secondary:
+
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body {
+  color: var(--text);
+  background-color: var(--background);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+ul li {
+  list-style: none;
+}
+h2{
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+h3{
+  font-size: 0.6;
+}
+h4{
+  font-size: 0.35em;
+}
+/* 
+//
+*/
+.title {
+  display: inline;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 4em;
+  background-color: var(--primary-b);
+}
+
+.menubar{
+  font-family: 'Libre Baskerville', serif;
+  /*text-decoration: none;*/
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+ 
+  
+}
+a {
+  color: var(--text);
+  background-color:inherit;
+  transition: all 1s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: var(--text);
+  background-color: var(--primary-b);
+}
+.quotes{
+  margin: 30px;
+}
+.illustration-1 {
+  max-width: 100%;
+  margin-bottom: 30px;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.border{
+  /*background-color: var(--secondary-a);*/
+  border: 2px solid var(--secondary-a);
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+.navigation{
+  margin-bottom: 40px;
+  margin-top: 30px;
+  width: 250px;
+	float: left;
+}
+
+.headshot{
+  border-radius: 50%;
+
+}
+.usercard{
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+  grid-gap: 2em;
+  margin-bottom: 30px;
+  text-align: justify;
+  padding-right: 30px;
+}
+.usercard-opposite{
+  display: grid;
+  grid-template-columns: 5fr 1.5fr;
+  grid-gap: 2em;
+  margin-bottom: 30px;
+  text-align: justify;
+  padding-left: 30px;
+}
+.usercard-opposite h3 {
+text-align: end;
+}
+
+
+/*
+////FOOTER
+*/
+footer { 
+  margin-top: 0;
+  padding-right: 6vw;
+  padding-left: 6vw;
+  max-width: 100%;
+}
+.bottom-info {
+  font-size: 1em;
+  line-height: 1em;
+  padding-bottom: 6vw;
+}
+
+.grouped {
+  padding-top: 8vw;
+  padding-bottom: 5vw;
+}
+
+.display-flex{
+  justify-content: space-between;
+}
+
+.additional-info {
+  border-bottom: 1px solid grey;
+  padding:10px 0; 
+  margin: 0px;
+ }
+
+.plus-sign {
+  float: right;
+  margin-top: -2px;
+  margin-right: 8px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1em;
+  color:inherit;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.25em;
+  display: block;
+  padding: 2vw 0;
+ }
+ .links {
+   text-align: start;
+ }
+
+.bottom-row {
+padding-bottom: 5vw;
+}
+ /* social media icons 
+.fa {
+  padding: 10px 0px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px 2px;
+  }
+
+.social-media:hover {
+  opacity: 0.7;
+}
+
+.facebook {
+background-color: #3B5998;
+color: white;
+}
+
+.twitter {
+background: #55ACEE;
+color: white;
+}
+.instagram {
+  background: #125688;
+  color: white;
+}
+*/
