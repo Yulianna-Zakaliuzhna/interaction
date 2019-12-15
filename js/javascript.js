@@ -32,20 +32,23 @@ const usercard = [
     name: `Kaloh Dinnerware Set - Turquoise`,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis tempore nesciunt vero ad soluta adipisci explicabo ducimus fugiat, non rerum facere ipsa quaerat fuga numquam quos ex. Velit, cupiditate.`,
     photo: `img/headshot-2.jpg`,
+    cssClass: 'usercard'
   },
   {
     id: 6,
     name: `Kaloh Dinnerware Set - Turquoise`,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis tempore nesciunt vero ad soluta adipisci explicabo ducimus fugiat, non rerum facere ipsa quaerat fuga numquam quos ex. Velit, cupiditate.`,
     photo: `img/headshot-2.jpg`,
+    cssClass: 'usercard-opposite'
   },
 ]
 
 
 function getUsercardAsHtmlString(usercard) {
 
-  return `<div class= "${usercard.cssClass}" >   
-            <nav><img class="headshot" src="${usercard.photo}" alt="${usercard.name}"><nav>
+  if(usercard.cssClass === "usercard") {
+    return `<div class= "${usercard.cssClass}" >   
+            <nav><img class="headshot" src="${usercard.photo}" alt="${usercard.name}"></nav>
               <ul>
                 <li><h3> ${usercard.name} </h3></li>
                 <li><h4> ${usercard.description}</h4></li>
@@ -53,6 +56,19 @@ function getUsercardAsHtmlString(usercard) {
               </ul>
           
            </div>`;
+  } else {
+    return `<div class= "${usercard.cssClass}" >   
+              <ul>
+                <li><h3> ${usercard.name} </h3></li>
+                <li><h4> ${usercard.description}</h4></li>
+                
+              </ul>
+            <nav><img class="headshot" src="${usercard.photo}" alt="${usercard.name}"></nav>
+
+           </div>`;
+  }
+
+  
 }
 function renderUsercard(arr) {
 
@@ -79,4 +95,5 @@ $("#loadMore").click(() =>{
    }
   });
 
-//renderUsercard(usercard.slice(0,numOfItems));
+renderUsercard(usercard.slice(0,numOfItems));
+
