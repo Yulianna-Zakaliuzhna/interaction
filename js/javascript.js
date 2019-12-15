@@ -45,7 +45,7 @@ const usercard = [
 function getUsercardAsHtmlString(usercard) {
 
   return `<div class= "${usercard.cssClass}" >   
-            <img class="headshot" src="${usercard.photo}" alt="${usercard.name}">
+            <nav><img class="headshot" src="${usercard.photo}" alt="${usercard.name}"><nav>
               <ul>
                 <li><h3> ${usercard.name} </h3></li>
                 <li><h4> ${usercard.description}</h4></li>
