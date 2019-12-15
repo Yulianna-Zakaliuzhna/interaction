@@ -36,17 +36,17 @@ function renderUsercard(arr) {
 
   //* 3. innerHTML String into Elements
   document.getElementById('usercard').innerHTML = strOfHtml;
+}
 
 $("#loadMore").click(() =>{
   if (id != 10){
      id += 5;
-     currentProducts = usercard.slice(0,id)
+     currentProducts = usercard.slice(0,id);
      renderUsercard(currentUsercard);
      }
    if(id == 3){
      $("#loadMore").css("visibility", "hidden");
    }
-   })
-
+  });
 
 renderUsercard(usercard.slice(0,id));
